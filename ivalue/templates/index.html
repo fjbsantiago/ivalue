@@ -1,0 +1,13 @@
+{% extends './base.html %}
+
+{% block main_content %}
+    <div id="wrapper" class="wrapper">
+        {% include './sections/header.html'  %}
+        
+        <div id="page-wrapper" class="page-wrapper">
+            {% block page_content %}{% endblock %}
+        </div>
+
+        {% include './sections/footer.html'  %}
+    </div>
+{% endblock %}

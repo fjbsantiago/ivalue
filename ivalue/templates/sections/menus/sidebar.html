@@ -1,0 +1,16 @@
+<div class="navbar-default sidebar" role="navigation">
+    <div class="sidebar-nav navbar-collapse">
+        <ul class="nav" id="side-menu">
+            {% if user.is_authenticated %}
+                <li>
+                    <a href="{% url 'dashboard' %}"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                </li>
+            {% else %}
+                <li>
+                    <a href="{% url 'signup' %}"><i class="fa fa-dashboard fa-fw"></i> Sign Up</a>
+                </li>
+            {% endif %}
+        </ul>
+    </div>
+    <!-- /.sidebar-collapse -->
+</div>

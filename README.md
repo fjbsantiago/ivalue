@@ -1,6 +1,6 @@
 # ivalue
 
-A Dango Application that collects financial data about US Stocks from different sources and calculates the fittest value stock for every day.
+A Dango Application that collects financial data about US ivalue from different sources and calculates the fittest value stock for every day.
 The stock is selected by applying the principles in the following books:
 - "The Little Book That Still Beats the Market" by Joel Greenblatt
 - "The Five Rules for Successful Stock Investing" by Pat Dorsey
@@ -14,9 +14,11 @@ These instructions will get a copy of the project up and running on your local m
 
 git
 
-### Installing
+## Installing
 
 These instructions explain how to set up a working local Development Environment
+
+### Setting up a Python Virtual Environment
 
 Install PyEnv
 
@@ -50,6 +52,9 @@ $ export PROJECT_HOME=$HOME/Devel (chose directory in which your projects will l
 $ source ~/.pyenv/shims/virtualenvwrapper.sh
 ```
 
+
+### Setting up the application
+
 Create a virtual environment, clone the project into it and set default folder for that project
 
 ```
@@ -64,10 +69,16 @@ Install Python dependencies
 $ pip install -r requirements.txt
 ```
 
-### Running the app
+Initialise Database
 
 ```
-$ cd src/
+$ python manage.py migrate
+$ python manage.py createsuperuser
+```
+
+### Running the application
+
+```
 $ python manage.py runserver
 ```
 
