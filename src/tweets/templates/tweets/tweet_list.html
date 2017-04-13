@@ -1,0 +1,19 @@
+list view
+</br>
+</br>
+<hr>
+
+<ol>
+    {% for object in object_list %}
+        <li id={{ object.id }}>
+        {{ object.content }}</br>
+        {{ object.user }}</br>
+        {{ object.timestamp }}</br>
+        {{ object.timestamp|timesince }}</br>
+        </li>
+    {% empty %}
+        </li>No tweets yet</li>
+    {% endfor %}
+
+</ol>
+
