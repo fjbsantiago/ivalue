@@ -1,6 +1,9 @@
 # ivalue
 
-This is a Dango Application that collects stocks financial data from different sources on the web and calculates the fittest for every day.
+A Dango Application that collects financial data about US Stocks from different sources and calculates the fittest value stock for every day.
+The stock is selected by applying the principles in the following books:
+- "The Little Book That Still Beats the Market" by Joel Greenblatt
+- "The Five Rules for Successful Stock Investing" by Pat Dorsey
 
 
 ## Getting Started
